@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Drag and Drop UI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>TODO</h2>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task1">Create Wireframes</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task2">Setup Database</div>
+        </div>
+        <div class="column" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>In Progress</h2>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task3">Design Homepage</div>
+        </div>
+        <div class="column" id="pending" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Pending</h2>
+        </div>
+        <div class="column" id="approved" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Accepted/Approved</h2>
+        </div>
+        <div class="column" id="rejected" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Rejected</h2>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
